@@ -1,43 +1,47 @@
 # Student Record Manager
 
-A simple Python console application for managing student records.
+A simple Python application for managing student records through a lightweight portal-style desktop interface.
 
 ## Features
 
-- Add a new student with name, roll number, age, email, and course
-- Validate input fields and email format
-- Save records to a text file named `students.txt`
-- View all saved student records in a tabular format
-- Continue running until the user chooses to exit
+- Add student records with name, roll number, age, email, and course
+- Validate required fields and email format
+- Save records to a plain text file named `students.txt`
+- View all saved students in a table-style records panel
+- Navigate between a dashboard, add-student form, and records view
 
 ## Requirements
 
 - Python 3.x
+- Tkinter (included with most Python installations)
 
 ## How to Run
 
-1. Open a terminal in this folder.
-2. Run the program:
+1. Open a terminal in the project folder.
+2. Start the portal UI:
 
 ```bash
 python student_record_manager.py
 ```
 
+3. Use the original console version instead:
+
+```bash
+python student_record_manager.py --console
+```
+
 ## File Structure
 
-- `student_record_manager.py` - Main program
+- `student_record_manager.py` - Main application script
 - `students.txt` - Saved student records
+- `README.md` - Project documentation
 
-## Menu Options
+## Validation Rules
 
-1. Add Student
-2. View Student Records
-3. Exit
+The application checks that:
+- Name and course are not empty
+- Roll number is provided
+- Age is a positive integer
+- Email follows a valid format
 
-## Notes
-
-- The program validates that:
-  - Name and course are not empty
-  - Age is a positive integer
-  - Email uses a valid format
-- Invalid input shows an appropriate error message.
+If any input is invalid, the app shows an error message and asks for corrected information.
