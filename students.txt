@@ -1,0 +1,4 @@
+Alice Johnson,1001,20,alice.johnson@example.com,Computer Science
+Bob Smith,1002,21,bob.smith@example.com,Mechanical Engineering
+Charlie Brown,1003,19,charlie.brown@example.com,Electrical Engineering
+Ganesh,123,21,mittavenkataganesh@gmail.com,Full Stack development
